@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record model="ir.ui.view" id="form_view">
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_case_form_view_leads"/>
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='extra']" position="after">
+                <page string="MODULO 1" name="modulo1">
+                    <group>
+                        <field name="x_campo1"/>
+                        <field name="x_campo2"/>
+                        <field name="x_campo3"/>
+                        <field name="x_campo4"/>
+                        <field name="x_campo4"/>
+                    </group>   
+                </page>
+            </xpath> 
+        </field>
+    </record>
+</odoo>
